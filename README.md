@@ -10,6 +10,9 @@ Hugging Face: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 
 The torch installation environment and the execution parameters for data augmentation can be found in the comments in nlpaug_explore.py
 
+### setup torch
+### pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+
 The script for running contrastive learning can be found in main.py, and the hyperparameters for running learning can be found in the script comments.
 
 ### Run the clustering experiment script:
