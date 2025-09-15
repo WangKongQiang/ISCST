@@ -13,7 +13,7 @@ The torch installation environment and the execution parameters for data augment
 ### setup torch
 ### pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 
-The script for running contrastive learning can be found in main.py, and the hyperparameters for running learning can be found in the script comments.
+The script for running contrastive learning can be found in main.py, and the hyperparameters for running contrastive learning can be found in the script comments.
 
 ### Run the clustering experiment script:
 ### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname searchsnippets_trans_subst_20_charswap_20 --num_classes 8
