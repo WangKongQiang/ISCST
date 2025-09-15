@@ -1,8 +1,8 @@
-The pre-trained models to be pulled, models--FacebookAI--roberta-base and models--google-bert--bert-base-uncased, are used for contextual_augment in the nlpaug_explore.py script
-
-Hugging Face: https://huggingface.co/google-bert/bert-base-uncased
+The pre-trained models to be pulled, models--FacebookAI--roberta-base and models--google-bert--bert-base-uncased, are used for contextual_augment in the nlpaug_explore.py script.
 
 Hugging Face: https://huggingface.co/FacebookAI/roberta-base
+
+Hugging Face: https://huggingface.co/google-bert/bert-base-uncased
 
 The pre-trained model to be pulled, models--sentence-transformers--all-mpnet-base-v2, serves as the backbone of the framework.
 
@@ -15,7 +15,7 @@ The torch installation environment and the execution parameters for data augment
 
 The script for running contrastive learning can be found in main.py, and the hyperparameters for running contrastive learning can be found in the script comments.
 
-### Run the clustering experiment script:
+### Run the clustering experiment script: (For example, take the experiment with trans_subst_20_charswap_20 data augmentation as a positive example)
 ### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname searchsnippets_trans_subst_20_charswap_20 --num_classes 8
 ### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname stackoverflow_trans_subst_20_charswap_20 --num_classes 20
 ### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname biomedical_trans_subst_20_charswap_20 --num_classes 20
