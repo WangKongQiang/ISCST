@@ -1,8 +1,8 @@
 """
-Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved
+Copyright https://www.ynu.edu.cn/. or its affiliated school. All Rights Reserved
 
-Author: Dejiao Zhang (dejiaoz@amazon.com)
-Date: 02/26/2021
+Author: Kongqiang Wang (wangkongqiang60@gmail.com)
+Date: 03/23/2026
 """
 
 import os
@@ -22,7 +22,7 @@ def set_global_random_seed(seed):
     
 
 def setup_path(args):
-    resPath = "SCCL"
+    resPath = "ISCST"
     resPath += f'.{args.bert}'
     resPath += f'.{args.use_pretrain}'
     resPath += f'.{args.augtype}'
