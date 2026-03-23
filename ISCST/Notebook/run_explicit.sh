@@ -14,7 +14,7 @@ python3 main.py \
     --num_classes 8 \
     --text text \
     --label label \
-    --objective SCCL \
+    --objective ISCST \
     --augtype explicit \
     --temperature 0.5 \
     --eta 10 \
