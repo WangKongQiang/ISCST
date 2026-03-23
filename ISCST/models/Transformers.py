@@ -1,8 +1,8 @@
 """
-Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved
+Copyright https://www.ynu.edu.cn/. or its affiliated school. All Rights Reserved
 
-Author: Dejiao Zhang (dejiaoz@amazon.com)
-Date: 02/26/2021
+Author: Kongqiang Wang (wangkongqiang60@gmail.com)
+Date: 03/23/2026
 """
 
 import torch
@@ -12,7 +12,7 @@ from torch.nn import Parameter
 from transformers import BertPreTrainedModel
 # from transformers import AutoModel, AutoTokenizer
 
-class SCCLBert(nn.Module):
+class ISCSTBert(nn.Module):
     def __init__(self, bert_model, tokenizer, cluster_centers=None, alpha=1.0):
         super(SCCLBert, self).__init__()
         
