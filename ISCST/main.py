@@ -1,8 +1,8 @@
 """
 Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved
 
-Author: Dejiao Zhang (dejiaoz@amazon.com)
-Date: 02/26/2021
+Author: Kongqiang Wang (wangkongqiang60@gmail.com)
+Date: 03/23/2026
 """
 
 import os
