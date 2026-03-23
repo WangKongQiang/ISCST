@@ -106,11 +106,11 @@ if __name__ == '__main__':
 # cd /mnt/c/Users/8888/PycharmProjects/pythonProject14/sccl/
     
 #  运行脚本
-#  python main.py --object SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname agnews_charswap_20 --num_classes 4
-#  python main.py --object SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname searchsnippets_charswap_20 --num_classes 8
-#  python main.py --object SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname stackoverflow_charswap_20 --num_classes 20
-#  python main.py --object SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname biomedical_charswap_20 --num_classes 20
-#  python main.py --object SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_TS_charswap_20 --num_classes 152
-#  python main.py --object SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_T_charswap_20 --num_classes 152
-#  python main.py --object SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_S_charswap_20 --num_classes 152
-#  python main.py --object SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname tweet_charswap_20 --num_classes 110
+#  python main.py --object ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname agnews_charswap_20 --num_classes 4
+#  python main.py --object ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname searchsnippets_charswap_20 --num_classes 8
+#  python main.py --object ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname stackoverflow_charswap_20 --num_classes 20
+#  python main.py --object ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname biomedical_charswap_20 --num_classes 20
+#  python main.py --object ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_TS_charswap_20 --num_classes 152
+#  python main.py --object ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_T_charswap_20 --num_classes 152
+#  python main.py --object ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_S_charswap_20 --num_classes 152
+#  python main.py --object ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname tweet_charswap_20 --num_classes 110
