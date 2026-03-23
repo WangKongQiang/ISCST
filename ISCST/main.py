@@ -1,5 +1,5 @@
 """
-Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved
+Copyright https://www.ynu.edu.cn/. or its affiliated school. All Rights Reserved
 
 Author: Kongqiang Wang (wangkongqiang60@gmail.com)
 Date: 03/23/2026
@@ -35,13 +35,13 @@ def run(args):
     # initialize cluster centers
     cluster_centers = get_kmeans_centers(bert, tokenizer, train_loader, args.num_classes, args.max_length)
     
-    model = SCCLBert(bert, tokenizer, cluster_centers=cluster_centers, alpha=args.alpha) 
+    model = ISCSTBert(bert, tokenizer, cluster_centers=cluster_centers, alpha=args.alpha) 
     model = model.cuda()
 
     # optimizer 
     optimizer = get_optimizer(model, args)
     
-    trainer = SCCLvTrainer(model, tokenizer, optimizer, train_loader, args)
+    trainer = ISCSTvTrainer(model, tokenizer, optimizer, train_loader, args)
     trainer.train()
     
     return None
