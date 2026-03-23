@@ -14,7 +14,7 @@ from transformers import BertPreTrainedModel
 
 class ISCSTBert(nn.Module):
     def __init__(self, bert_model, tokenizer, cluster_centers=None, alpha=1.0):
-        super(SCCLBert, self).__init__()
+        super(ISCSTBert, self).__init__()
         
         self.tokenizer = tokenizer
         self.bert = bert_model
