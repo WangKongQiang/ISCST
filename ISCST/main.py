@@ -12,9 +12,9 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 import torch
 import argparse
-from models.Transformers import SCCLBert
+from models.Transformers import ISCSTBert
 import dataloader.dataloader as dataloader
-from training import SCCLvTrainer
+from training import ISCSTvTrainer
 from utils.kmeans import get_kmeans_centers
 from utils.logger import setup_path, set_global_random_seed
 from utils.optimizer import get_optimizer, get_bert
@@ -103,7 +103,7 @@ if __name__ == '__main__':
             
 
 # 路径位置
-# cd /mnt/c/Users/8888/PycharmProjects/pythonProject14/sccl/
+# cd /mnt/c/Users/8888/PycharmProjects/pythonProject14/iscst/
     
 #  运行脚本
 #  python main.py --object ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname agnews_charswap_20 --num_classes 4
