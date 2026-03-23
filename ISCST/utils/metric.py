@@ -2,7 +2,7 @@
 Copyright https://www.ynu.edu.cn/. or its affiliated school. All Rights Reserved
 
 Author: Kongqiang Wang (wangkongqiang60@gmail.com)
-Date: 23/3/2026
+Date: 3/23/2026
 """
 
 from __future__ import print_function
