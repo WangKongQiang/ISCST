@@ -28,11 +28,11 @@ The torch installation environment and the execution parameters for data augment
 The script for running contrastive learning can be found in main.py, and the hyperparameters for running contrastive learning can be found in the script comments.
 
 ### Run the clustering experiment script: (For example, take the experiment with trans_subst_20_charswap_20 data augmentation as a positive example)
-### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname searchsnippets_trans_subst_20_charswap_20 --num_classes 8
-### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname stackoverflow_trans_subst_20_charswap_20 --num_classes 20
-### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname biomedical_trans_subst_20_charswap_20 --num_classes 20
-### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname agnews_trans_subst_20_charswap_20 --num_classes 4
-### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname tweet_trans_subst_20_charswap_20 --num_classes 110
-### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_TS_trans_subst_20_charswap_20 --num_classes 152
-### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_T_trans_subst_20_charswap_20 --num_classes 152
-### python main.py  --objective SCCL --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_S_trans_subst_20_charswap_20 --num_classes 152
+### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname searchsnippets_trans_subst_20_charswap_20 --num_classes 8
+### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname stackoverflow_trans_subst_20_charswap_20 --num_classes 20
+### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname biomedical_trans_subst_20_charswap_20 --num_classes 20
+### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname agnews_trans_subst_20_charswap_20 --num_classes 4
+### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname tweet_trans_subst_20_charswap_20 --num_classes 110
+### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_TS_trans_subst_20_charswap_20 --num_classes 152
+### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_T_trans_subst_20_charswap_20 --num_classes 152
+### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_S_trans_subst_20_charswap_20 --num_classes 152
