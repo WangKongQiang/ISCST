@@ -1,8 +1,8 @@
 """
-Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved
+Copyright https://www.ynu.edu.cn/ or its affiliated school. All Rights Reserved
 
-Author: Dejiao Zhang (dejiaoz@amazon.com)
-Date: 02/26/2021
+Author: Kongqiang Wang (wangkongqiang60@gmail.com)
+Date: 03/23/2026
 """
 
 import os
@@ -20,9 +20,9 @@ from torch.nn import functional as F
 from learner.cluster_utils import target_distribution
 from learner.contrastive_utils import PairConLoss
 
-class SCCLvTrainer(nn.Module):
+class ISCSTvTrainer(nn.Module):
     def __init__(self, model, tokenizer, optimizer, train_loader, args):
-        super(SCCLvTrainer, self).__init__()
+        super(ISCSTvTrainer, self).__init__()
         self.model = model
         self.tokenizer = tokenizer
         self.optimizer = optimizer
@@ -34,7 +34,7 @@ class SCCLvTrainer(nn.Module):
         self.contrast_loss = PairConLoss(temperature=self.args.temperature)
         
         self.gstep = 0
-        print(f"*****Intialize SCCLv, temp:{self.args.temperature}, eta:{self.args.eta}\n")
+        print(f"*****Intialize ISCSTv, temp:{self.args.temperature}, eta:{self.args.eta}\n")
         
     def get_batch_token(self, text):
         token_feat = self.tokenizer.batch_encode_plus(
@@ -78,7 +78,7 @@ class SCCLvTrainer(nn.Module):
         loss = self.eta * losses["loss"]
         
         # Clustering loss
-        if self.args.objective == "SCCL":
+        if self.args.objective == "ISCST":
             output = self.model.get_cluster_prob(embd1)
             target = target_distribution(output).detach()
             
@@ -102,7 +102,7 @@ class SCCLvTrainer(nn.Module):
         loss = self.eta * losses["loss"]
 
         # Clustering loss
-        if self.args.objective == "SCCL":
+        if self.args.objective == "ISCST":
             output = self.model.get_cluster_prob(embd1)
             target = target_distribution(output).detach()
             
