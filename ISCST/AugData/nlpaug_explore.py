@@ -160,8 +160,8 @@ if __name__ == '__main__':
 
 #文本增强
 
-    datadir = "/mnt/c/Users/8888/PycharmProjects/pythonProject14/sccl/AugData/textdatasets"
-    targetdir = "/mnt/c/Users/8888/PycharmProjects/pythonProject14/sccl/AugData/textdatasets/augmentation"
+    datadir = "/mnt/c/Users/8888/PycharmProjects/pythonProject14/iscst/AugData/textdatasets"
+    targetdir = "/mnt/c/Users/8888/PycharmProjects/pythonProject14/iscst/AugData/textdatasets/augmentation"
 
     datasets = ["agnews", "searchsnippets", "stackoverflow", "biomedical", "googlenews_TS", "googlenews_T", "googlenews_S", "tweet"]
 
@@ -179,8 +179,8 @@ if __name__ == '__main__':
     #     augment_files(datadir=datadir, targetdir=targetdir, dataset=dataset, aug_p=0.1, augtype="word_deletion")
     #     augment_files(datadir=datadir, targetdir=targetdir, dataset=dataset, aug_p=0.2, augtype="word_deletion")
 
-    # datadir = "/mnt/c/Users/8888/PycharmProjects/pythonProject14/sccl/AugData/textdatasets/augmentation"
-    # targetdir = "/mnt/c/Users/8888/PycharmProjects/pythonProject14/sccl/AugData/textdatasets/augmentation"
+    # datadir = "/mnt/c/Users/8888/PycharmProjects/pythonProject14/iscst/AugData/textdatasets/augmentation"
+    # targetdir = "/mnt/c/Users/8888/PycharmProjects/pythonProject14/iscst/AugData/textdatasets/augmentation"
 
     # datasets = ["agnews_trans_subst_10", "searchsnippets_trans_subst_10", "stackoverflow_trans_subst_10",
     #             "biomedical_trans_subst_10", "googlenews_TS_trans_subst_10", "googlenews_T_trans_subst_10",
@@ -198,7 +198,7 @@ if __name__ == '__main__':
 
 
 # 到本文件目录
-# cd /mnt/c/Users/8888/PycharmProjects/pythonProject14/sccl/AugData/
+# cd /mnt/c/Users/8888/PycharmProjects/pythonProject14/iscst/AugData/
 
 # 执行脚本
 # python nlpaug_explore.py
