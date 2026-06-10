@@ -1,0 +1,37 @@
+Distinguished conference participants, good afternoon! Next, I’d like to introduce the research we’re about to delve into. Its title is ISCST: Improved Supporting Clustering Based on Sentence-Transformers with Contrastive Learning. This work is conducted by a research team from the School of Information Science and Engineering, Yunnan University, Kunming, Yunnan, China—specifically, scholars Kongqiang Wang, Xuejie Zhang, Jin Wang, and Xiaobing Zhou (corresponding author). In the current landscape of natural language processing, research around clustering techniques remains a topic of active interest. This study focuses on advancing supporting clustering methods: it builds on Sentence-Transformers and integrates contrastive learning to refine the framework. We believe this work will offer valuable insights into related technical explorations. Let’s now turn to the details of this research.
+
+Now, let's take a look at the structure of our research: First up is Part one, the Task Overview; Then Part two, the Dataset Introduction; Next is Part three, the Experimental Method; After that comes Part four, the Experimental Result; And finally, Part five, the Conclusion and Future Work. That’s the overall reporting framework of our study.
+
+Part one, Task Overview.
+
+Now, let’s move to the motivation of our work. Clustering is a core challenge in unsupervised ML, and traditional methods like K-means struggle with high-dimensional data due to the curse of dimensionality. As shown in Figure 1, even with deep networks, data categories often overlap before clustering—leading to poor cluster purity. Advanced methods like SCCL and DACL can separate clusters to some extent, but still fail to form clear, distinct cluster boundaries. That’s the problem we aim to address.
+
+Now, let's introduce our proposed method. We design a joint model that integrates instance-wise contrastive learning (Instance-CL) with clustering for unsupervised representation learning. As shown in Figure 2, a backbone ψ(·) maps input data to embeddings, then two heads follow: g(·) for contrastive loss, and f(·) for clustering loss. Our data includes both original and augmented samples: for a minibatch B, we randomly generate augmented data B^a.
+
+Now let’s look at Figure 2—this is our proposed ISCST framework: it combines bottom-up instance discrimination with top-down clustering objectives, built on Sentence-Transformers plus contrastive learning. ISCST uses contrastive learning to boost categorical separation, while optimizing intra-cluster compactness and inter-cluster discrimination. That’s how our model works.
+
+Part two, Dataset Introduction.
+
+Next, we tested ISCST on 8 benchmark datasets across different domains—details are in Table 1. For example: SearchSnippets has 12k web snippets in 8 groups; StackOverflow has 20k tech questions in 20 categories; and we also used datasets like Biomedical, AgNews, etc. These cover diverse text types to ensure comprehensive evaluation.
+
+Part three, Experimental Method.
+
+Now, let’s talk about implementation details: We built ISCST using PyTorch and the Sentence Transformer library. For embeddings, we used the all-mpnet-base-v2 model. The clustering head (f) is a linear layer with 768×K dimensions (K = number of clusters), and the contrastive learning component uses an MLP (g) with 768 hidden units and 128-dimensional outputs.
+
+Now let’s cover our data augmentation exploration—we tested 4 unsupervised strategies: First, Word Deletion (randomly removes words via WordNet); second, Charswap (swaps random characters); third, Contextual Augmenter (uses BERT/RoBERTa for semantic-based insertion/substitution); fourth, Paraphrase Augmenter (round-trip translation via English-French models). These strategies help generate robust positive pairs for contrastive learning.
+
+Let’s take a look at Figure 3—it shows how our paraphrase augmentation works. We start with an example input sentence about the Games’ postponement. Using round-trip translation (English-French-English) plus a mixture-of-experts model, we generate two paraphrased outputs, as shown here. This is how we create augmented text pairs for our model.
+
+Part four, Experimental Result.
+
+Now, let's talk about evaluation metrics: we use four standard ones—ACC (matches predicted and true categories), NMI (information correlation between results and labels), ARI (consistency adjusted for chance), and AMI (NMI with random clustering correction). For short text clustering, we focus on ACC and NMI: they offer complementary views via direct category matching and information-theoretic relationships.
+
+Now we’ll compare ISCST to state-of-the-art short text clustering methods—like STCC (three-stage optimization), Self-Train (autoencoder-based), SimCTC (simple contrastive learning), and others like SCCL and DACL. Our method updates target distributions at each iteration. This lets it outperform multi-stage and hierarchical approaches, achieving superior performance overall.
+
+Let’s now look at how we compare to state-of-the-art methods for short text clustering: We benchmark against approaches like STCC (three-stage Word2Vec+CNN+K-means), Self-Train (autoencoder-based), SimCTC (contrastive learning), and improved ones like SCCL and DACL. Our method updates target distributions each iteration—and this helps it outperform these multi-stage/hierarchical approaches, showing better overall performance.
+
+Part five, Conclusion and Future Work. 
+
+To wrap up: We proposed ISCST—a framework that combines instance contrastive learning with Sentence-Transformers for unsupervised clustering. Across 8 short-text datasets, it outperforms state-of-the-art methods; ablation studies confirm that merging bottom-up instance discrimination and top-down clustering boosts cluster quality. This framework works for various text clustering tasks, and future work will explore data mixing for language’s discrete nature. With that, I’m ready to take your questions.
+
+Here, I’ve prepared two frequently asked questions to kick off our Q&A session.
