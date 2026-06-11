@@ -39,3 +39,8 @@ The script for running contrastive learning can be found in main.py, and the hyp
 ### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_TS_trans_subst_20_charswap_20 --num_classes 152
 ### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_T_trans_subst_20_charswap_20 --num_classes 152
 ### python main.py  --objective ISCST --augtype explicit --eta 10 --batch_size 400 --max_iter 3000 --bert mpnet --dataname googlenews_S_trans_subst_20_charswap_20 --num_classes 152
+
+##Speech Presentation##
+
+Files shared via baidu cloud disk：Room8_25-06_07-30_Kongqiang_ISCST.mp4
+Link: https://pan.baidu.com/s/1JY6jTvhXwHJfPWBsWwAakA?pwd=vzeh Fetch Code: vzeh
