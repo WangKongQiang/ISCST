@@ -43,4 +43,5 @@ The script for running contrastive learning can be found in main.py, and the hyp
 ##Speech Presentation##
 
 Files shared via baidu cloud disk：Room8_25-06_07-30_Kongqiang_ISCST.mp4
+
 Link: https://pan.baidu.com/s/1JY6jTvhXwHJfPWBsWwAakA?pwd=vzeh Fetch Code: vzeh
